@@ -215,10 +215,7 @@ public class DoublePendulum extends JFrame {
 
     private void updateInfoLabel() {
         String info = String.format(
-                "<html><pre>" +
-                        "Pendulum 1:  θ=%-6s°  ω=%-6s rad/s  α=%-6s rad/s²%n" +
-                        "Pendulum 2:  θ=%-6s°  ω=%-6s rad/s  α=%-6s rad/s²" +
-                        "</pre></html>",
+
                 df.format(Math.toDegrees(theta1)),
                 df.format(omega1),
                 df.format(alpha1),
